@@ -14,9 +14,10 @@ h6 {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 .a:hover, a:focus {
-    color: #4d5ae5;
+    /* color: #4d5ae5; */
 }
 .link {
     text-decoration: none;
@@ -57,8 +58,129 @@ img {
          overflow: hidden;         }
 
 /*-----------HEADER----------*/
+.header-navigation {
+    display: none;
+}
+.header-btn {
+    display: none;
+}
+.heder-logo-icon {
+    fill: #fff;
+}
 
+/*------------- HERO------------- */
+.hero {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
 
+.container {}
+
+.hero-title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        margin-bottom: 20px;
+}
+
+.hero-title-italic {
+    font-style: italic;
+        font-weight: 400;
+        color: #bea69b;
+}
+
+.hero-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        margin-bottom: 40px;
+}
+.hero-box-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        display: flex;
+        align-items: center;
+        max-width: 80px;
+        gap: 4px
+}
+.hero-box-icon {
+    stroke: none;
+    fill: #fff;
+}
+.hero-box-imgs {
+    display: flex;
+    flex-direction: row-reverse;
+   justify-content: flex-end;
+}
+
+.hero-box-imgs img {
+    border-radius: 50%;
+    border: 2px solid #1d1d1d;
+    margin-right: -15px;
+}
+
+.hero-box-imgs img:first-child {
+    margin-right: 0; 
+}
+.hero-box-revtext {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        color: rgba(255, 255, 255, 0.5); 
+}
+.hero-box-numtext {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 113%;
+        letter-spacing: -0.04em;
+}
+.hero-icon-star {
+    stroke-width: 1.50px;
+    stroke: #060707;
+    fill: #bea69b;
+}
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #bea69b;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.hero-box-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.hero-box-text {
+    display: flex;
+    flex-direction: column;
+}
+.hero-box {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  margin-bottom: 30px;
+}
+.hero-box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.hero-rev-text {
+    max-width: 90px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.hero-img {}
 /* ------------TITLE------------- */
 
 .title {
@@ -106,7 +228,7 @@ img {
         line-height: 129%;
         letter-spacing: -0.02em;
 }
-p+p {
+.about p+p {
     margin-top: 16px; }
 
 /*---------- COURSES----------- */
@@ -405,7 +527,115 @@ textarea::placeholder {
         line-height: 129%;
         letter-spacing: -0.02em;
 }
+
+/*---------- FOOTER -------------*/
+.foot {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container {}
+
+.header-logo {}
+
+.heder-logo-icon {
+    margin-bottom: 16px;
+}
+
+.foot-contacts {}
+
+.foot-contacts-list {
+  margin-bottom: 40px;
+}
+
+.foot-contacts-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        text-transform: uppercase;
+        color: #fff;
+}
+.foot-contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.foot-contacts-link {
    
+}
+
+.foot-social-list {}
+
+.foot-social-item {
+    font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+}
+.foot-social-item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.instagram-link {}
+
+.facebook-link {}
+
+.youtube-link {}
+
+.foot-navigation {}
+
+.foot-menu-list {}
+
+.foot-menu-item {
+  font-weight: 400;
+  font-size: 14px;
+text-transform: uppercase;
+       
+}
+.foot-menu-item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.foot-menu-link {}
+.foot-box {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+
+.curret {}
+
+.label-foot-email {}
+
+.input-foot-email {
+    border-radius: 12px;
+        width: 209px;
+        height: 50px;
+        border: none;
+}
+.input-foot-email::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #121212;
+        opacity: 0.7;
+}
+.foot-btn {
+    border-radius: 12px;
+    background-color: #1d1d1d;
+    height: 55px;
+    min-width: 55px;
+    color: #fff;
+    border: none;
+    margin-left: 8px;
+}
+.foot-information-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+ .foot-information-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+ }
     /* MEDIA */
    
     @media screen and (min-width: 768px) {

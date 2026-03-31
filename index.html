@@ -43,6 +43,36 @@
       <h1 class="hero-title">Discover the magic of <span class="hero-title-italic">photography</span> in our school</h1>  
       <p class="hero-text">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical
     skills, translate your unique ideas.</p>
+    <div class="hero-box">
+        <div class="hero-box-left">
+        <div class="hero-box-imgs">
+        <img class="hero-box-img" 
+        srcset="./images/girlsmallmob1x2.webp 1x, ./images/girlsmallmob2x2.webp 2x"
+        src="./images/girlsmallmob1x2.webp" alt="girl" width="44" height="44">
+        <img class="hero-box-img" srcset="./images/boysmallmob1x.webp 1x, ./images/boysmallmob2x.webp 2x"
+            src="./images/boysmallmob1x.webp" alt="boy" width="44" height="44">
+            <img class="hero-box-img" srcset="./images/girlsmallmob1x1.webp 1x, ./images/girlsmallmob2x1.webp 2x"
+                src="./images/girlsmallmob1x1.webp" alt="girl" width="44" height="44">
+            </div>
+                <p class="hero-rev-text">Our happy students
+                    <svg class="hero-box-icon" width="20" height="10">
+                        <use href="./images/symbol-defs.svg#icon-Arrow-2-Stroke"></use>          </svg>
+                </p>
+              </div>
+                <div class="hero-box-star">
+                <div class="icon-circle">
+                    <svg class="hero-icon-star" width="19" height="18">
+                        <use href="./images/symbol-defs.svg#icon-Vector-5"></use>          </svg>
+                    </div>
+                    <div class="hero-box-text">
+                        <p class="hero-box-revtext">Reviews</p>
+               <p class="hero-box-numtext">+1500</p>
+            </div>
+            </div>     
+    </div>
+    <img class="hero-img" 
+    srcset="./images/Rectangle5mob1x.webp 1x, ./images/Rectangle5mob2x.webp 2x"
+    src="./images/Rectangle5mob1x.webp" alt="boy with camera" width="239" height="304">
     </div>
 </section>
 <section class="title">
@@ -50,7 +80,7 @@
     <h2 class="title-section">Master <span class="title-section-italic">your photography</span>skills with us!</h2>
 </div>
 </section>
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <h2 class="about-title">About <span class="subtitle-italic">Us</span></h2>
         <img class="about-img" 
@@ -65,7 +95,7 @@
         photography, discover your own style and develop your own visual language.</p>
     </div>
 </section>
-<section class="courses">
+<section class="courses" id="courses">
     <div class="container">
         <h2 class="courses-title">Our <span class="subtitle-italic">Courses</span></h2>
         <p class="courses-text">At our photography school, we offer a variety of courses that cover all aspects of this fascinating art. Regardless of
@@ -113,7 +143,7 @@
         </ul>
     </div>
 </section>
-<section class="mentors">
+<section class="mentors" id="mentors">
     <div class="container">
         <h2 class="mentors-title">Our <span class="subtitle-italic">Mentors</span></h2>
        <ul class="mentors-list">
@@ -152,7 +182,7 @@
        </ul> 
     </div>
 </section>
-<section class="form">
+<section class="form" id="contacts">
 <div class="container">
 <h2 class="form-title">Sign <span class="subtitle-italic">Up</span></h2> 
 <p class="form-text">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>   
@@ -176,7 +206,7 @@ and allow Promodo to use this information for marketing purposes.</p>
 <img class="form-img-big" src="" alt="">
 </div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
         <ul class="reviews-list">
@@ -242,7 +272,9 @@ and allow Promodo to use this information for marketing purposes.</p>
    <footer class="foot">
 <div class="container">
     <a class="header-logo" href="./index.html">
-        <img class="header-logo-img" src="" alt="">
+        <svg class="heder-logo-icon" width="123" height="16">
+            <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
+            </svg>
     </a>
     <adress class="foot-contacts">
         <ul class="foot-contacts-list">
@@ -250,6 +282,8 @@ and allow Promodo to use this information for marketing purposes.</p>
                     href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="foot-contacts-item"><a class="foot-contacts-link" href="tel:+110001111111">+11 (000)
                     111-11-11</a></li>
+                </ul>
+                <div class="foot-box">
         <ul class="foot-social-list">
             <li class="foot-social-item">
                 <a class="instagram-link" href="">Instagram</a>
@@ -261,22 +295,34 @@ and allow Promodo to use this information for marketing purposes.</p>
                         <a class="youtube-link" href="">Youtube</a>  
                      </li>
              </ul>
-                </ul>
+                
         <nav class="foot-navigation">
             <ul class="foot-menu-list">
-                <li class="foot-menu-item"><a class="foot-menu-link curret" href="">About us</a></li>
-                <li class="foot-menu-item"><a class="foot-menu-link" href="">Our courses</a></li>
-                <li class="foot-menu-item"><a class="foot-menu-link" href="">Our mentors</a></li>
-                <li class="foot-menu-item"><a class="foot-menu-link" href="">Reviews</a></li>
-                <li class="foot-menu-item"><a class="foot-menu-link" href="">Contacts</a></li>
+                <li class="foot-menu-item"><a class="foot-menu-link" href="#about">About us</a></li>
+                <li class="foot-menu-item"><a class="foot-menu-link" href="#courses">Our courses</a></li>
+                <li class="foot-menu-item"><a class="foot-menu-link" href="#mentors">Our mentors</a></li>
+                <li class="foot-menu-item"><a class="foot-menu-link" href="#reviews">Reviews</a></li>
+                <li class="foot-menu-item"><a class="foot-menu-link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
+    </div>
         <label class="label-foot-email" for="input-foot-email">
             <input type="email" id="input-foot-email" class="input-foot-email" name="input-foot-email"
                 placeholder="Enter your email">
             </label>
             <button class="foot-btn" type="submit">Go</button>
-</div>
+<ul class="foot-information-list">
+    <li class="foot-information-item">
+        <p class="foot-information-text">Privacy Policy
+        Public Offering Agreement</p>
+    </li>
+    <li class="foot-information-item">
+        <p class="foot-information-text">2024 Focus Frame
+        © All rights reserved</p>
+    </li>
+</ul>
+
+        </div>
    </footer>
    
    
