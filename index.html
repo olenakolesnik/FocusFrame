@@ -21,11 +21,17 @@
 </head>
 <body>
     <header class="header">
-     <div class="container">
+     <div class="container header-container">
         <nav class="header-navigation">
             <a class="header-logo" href="./index.html">
-                <img class="header-logo-img" src="" alt="">
+                <svg class="heder-logo-icon" width="123" height="16">
+                    <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>  </svg>
                </a>
+               <button class="mobile-menu-open" type="button">          
+                 <svg class="heder-nav-icon" width="32" height="22">
+                <use href="./images/symbol-defs.svg#icon-Nav"></use>
+            </svg>
+        </button>
             <ul class="header-menu-list">
                 <li class="header-menu-item"><a class="header-menu-link curret" href="">About us</a></li>
                 <li class="header-menu-item"><a class="header-menu-link" href="">Our courses</a></li>
@@ -35,11 +41,29 @@
             </ul>
         </nav>
         <button class="header-btn" type="submit">Sign up</button>
-     </div>
+    </div>
+        </div>
+    <div class="backdrop hidden container">
+        <div class="modal">
+            <button class="mobile-menu-close" type="button">
+                <svg class="mobile-btn-close" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-x"></use>
+                </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item"><a class="header-menu-link curret" href="">About us</a></li>
+                        <li class="mobile-menu-item"><a class="header-menu-link" href="">Our courses</a></li>
+                        <li class="mobile-menu-item"><a class="header-menu-link" href="">Our mentors</a></li>
+                        <li class="mobile-menu-item"><a class="header-menu-link" href="">Reviews</a></li>
+                        <li class="mobile-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
+                    </ul>      </nav>
+        </div>
+   
     </header>
     <main>
 <section class="hero">
-    <div class="container">
+    <div class="container hero-container">
       <h1 class="hero-title">Discover the magic of <span class="hero-title-italic">photography</span> in our school</h1>  
       <p class="hero-text">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical
     skills, translate your unique ideas.</p>
@@ -185,7 +209,7 @@
 <section class="form" id="contacts">
 <div class="container">
 <h2 class="form-title">Sign <span class="subtitle-italic">Up</span></h2> 
-<p class="form-text">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>   
+<p class="form-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>   
 <form class="form-signup">
     <label class="label-signup-name" for="input-signup-name">
         <input type="text" id="input-signup-name" class="input-signup-name" name="input-signup-name"
@@ -271,8 +295,8 @@ and allow Promodo to use this information for marketing purposes.</p>
 
    <footer class="foot">
 <div class="container">
-    <a class="header-logo" href="./index.html">
-        <svg class="heder-logo-icon" width="123" height="16">
+    <a class="foot-logo" href="./index.html">
+        <svg class="foot-logo-icon" width="123" height="16">
             <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
             </svg>
     </a>
@@ -325,6 +349,6 @@ and allow Promodo to use this information for marketing purposes.</p>
         </div>
    </footer>
    
-   
+ <script src="./js/mobile-menu.js"></script>  
 </body>
 </html>

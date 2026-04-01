@@ -30,5 +30,14 @@
         <symbol id="icon-Vector-5" viewBox="0 0 34 32">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16.148 1.333l4.578 9.274 10.237 1.496-7.407 7.215 1.748 10.193-9.155-4.815-9.156 4.815 1.748-10.193-7.407-7.215 10.237-1.496 4.578-9.274z"></path>
         </symbol>
+        <symbol id="icon-Nav" viewBox="0 0 47 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8.538 5.333h36.553"></path>
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8.538 24.727h36.553"></path>
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M19.668 15.030h25.423"></path>
+        </symbol>
+        <symbol id="icon-x" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
+        </symbol>
     </defs>
 </svg>

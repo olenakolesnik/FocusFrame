@@ -16,8 +16,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.a:hover, a:focus {
-    /* color: #4d5ae5; */
+a:focus {
+    color: #bea69b;
+}
+a:active {
+    color: #bea69b;
 }
 .link {
     text-decoration: none;
@@ -58,7 +61,23 @@ img {
          overflow: hidden;         }
 
 /*-----------HEADER----------*/
-.header-navigation {
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.header-container {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+       }
+       .header-navigation {
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+       }
+.header-menu-list {
     display: none;
 }
 .header-btn {
@@ -67,14 +86,63 @@ img {
 .heder-logo-icon {
     fill: #fff;
 }
+.heder-nav-icon {
+    stroke: #fff;
+ }
+ .mobile-menu-open {
+    background-color: transparent;
+    border: none;
+ }
 
+.mobile-container {}
+
+.mobile-menu-close {}
+
+.mobile-btn-close {
+    stroke: #060707;
+}
+
+.mobile-nav {}
+
+.mobile-menu-list {
+    .menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            background: black;
+            color: white;
+            padding: 20px;     }  
+}
+
+.mobile-menu-item {}
+
+.header-menu-link {}
+
+.curret {}
+.hidden {
+    display: none;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
 /*------------- HERO------------- */
 .hero {
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 80px;
 }
 
-.container {}
+.hero-container {
+    padding-top: 40px;
+    border-radius: 30px;
+    background-color: #1d1d1d;
+}
 
 .hero-title {
         font-weight: 500;
@@ -295,15 +363,18 @@ img {
 .course-icon-box {
     margin-bottom: 28px;
 }
-.courses-icon-circle {
-  
-}
+
 
 .courses-icon {
     stroke: none;
     fill: #1d1d1d;
 }
-
+.courses-icon:focus {
+    fill: #bea69b;
+}
+.courses-icon:active {
+    fill: #bea69b;
+}
 .courses-subtitle {
         font-weight: 500;
         font-size: 28px;
@@ -380,43 +451,74 @@ img {
 
 .form-text {
         font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        color: rgba(255, 255, 255, 0.5);
+        
+}
+.form-text-italic {
+    text-decoration: underline;
+        text-decoration-skip-ink: none;
+}
+.form-description {
+    font-weight: 400;
         font-size: 14px;
         line-height: 129%;
         letter-spacing: -0.02em;
+        margin-bottom: 40px;
 }
-
 .form-signup {}
 
-.label-signup-name {}
+.label-signup-name {
+    
+}
 
 .input-signup-name {
+    outline: none;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
         width: 280px;
         height: 40px;
         margin-bottom: 8px;
+        padding-left: 18px;
+        color: #fff;
 }
-
+.input-signup-name:focus, .input-signup-name:active {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
 .label-signup-email {}
 
 .input-signup-email {
+    outline: none;
     background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
         width: 280px;
         height: 40px;
         margin-bottom: 8px;
+        padding-left: 18px;
+        color: #fff;
+}
+.input-signup-email:focus, .input-signup-email:active {
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .input-signup-message {
+    outline: none;
     border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
         width: 280px;
         height: 112px;
         background-color: transparent;
         margin-bottom: 40px;
+        padding-left: 18px;
+        padding-top: 14px;
+        color: #fff;
 }
-
+.input-signup-message:focus, .input-signup-message:active {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+   
+}
 .btn-signup {
     border-radius: 12px;
         min-width: 280px;
@@ -430,6 +532,10 @@ img {
             border: none;
             margin-bottom: 20px;
 }
+.btn-signup:focus, .btn-signup:active {
+    background-color: #1d1d1d;
+    color: #bea69b
+}
 input::placeholder,
 textarea::placeholder {
         font-weight: 400;
@@ -437,18 +543,16 @@ textarea::placeholder {
         line-height: 129%;
         color: #fff;
         opacity: 0.7;
-        padding-left: 18px;
-        padding-top: 14px;
+        
+}
+input::placeholder:focus, input::placeholder:active,
+textarea::placeholder:focus, textarea::placeholder:active {
+    opacity: 1;
 }
 .form-img-small {}
 
 .form-img-big {}
-.form-text {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 133%;
-        color: rgba(255, 255, 255, 0.5);
-}
+
 .form-text-italic {
     text-decoration: underline;
         text-decoration-skip-ink: none;
@@ -533,13 +637,9 @@ textarea::placeholder {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-.container {}
-
-.header-logo {}
-
-.heder-logo-icon {
+.foot-logo-icon {
     margin-bottom: 16px;
+    fill: #fff;
 }
 
 .foot-contacts {}
@@ -609,6 +709,7 @@ text-transform: uppercase;
         width: 209px;
         height: 50px;
         border: none;
+        padding-left: 18px;
 }
 .input-foot-email::placeholder {
         font-weight: 400;
@@ -625,6 +726,10 @@ text-transform: uppercase;
     color: #fff;
     border: none;
     margin-left: 8px;
+}
+.foot-btn:focus, .foot-btn:active {
+    background-color: #fff;
+    color: #121212;
 }
 .foot-information-list {
     display: flex;
