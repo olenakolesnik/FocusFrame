@@ -96,28 +96,53 @@ img {
 
 .mobile-container {}
 
-.mobile-menu-close {}
+.mobile-menu-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
 
 .mobile-btn-close {
     stroke: #060707;
 }
-
-.mobile-nav {}
-
-.mobile-menu-list {
-    .menu {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 250px;
-            height: 100%;
-            background: black;
-            color: white;
-            padding: 20px;     }  
+.mobile-img {
+    position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 198px;
+        pointer-events: none;
+}
+.mobile-nav {
+   
 }
 
-.mobile-menu-item {}
+.mobile-menu-list {
+            position: absolute;
+            width: 250px;
+            height: 100%;
+            padding-left: 20px;  
+            padding-top: 150px;  
+            padding-right: 100px; 
+}
 
+.mobile-menu-item {
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #121212;
+        cursor: pointer;
+}
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.mobile-menu-item:active, .mobile-menu-item:focus {
+    font-weight: 700;
+    color: #121212;
+}
 .header-menu-link {}
 
 .curret {}
@@ -130,7 +155,15 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(18, 18, 18, 0.4);
+}
+.modal {
+    position: relative;
+    background-color: #bea69b;
+    width: 198px;
+        height: 812px;
+        position: absolute;
+         left: 40%;
 }
 /*------------- HERO------------- */
 .hero {

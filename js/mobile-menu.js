@@ -1,5 +1,5 @@
 const openBtn = document.querySelector(".mobile-menu-open");
-const closeBtn = document.querySelector(".mobile-btn-close");
+const closeBtn = document.querySelector(".mobile-menu-close");
 const backdrop = document.querySelector(".backdrop");
 
 // відкрити меню
