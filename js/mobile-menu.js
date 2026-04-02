@@ -18,3 +18,10 @@ backdrop.addEventListener("click", (e) => {
     backdrop.classList.add("hidden");
   }
 });
+const menuLinks = document.querySelectorAll(".mobile-menu-item a");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    backdrop.classList.add("hidden");
+  });
+});

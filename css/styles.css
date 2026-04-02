@@ -16,14 +16,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:focus {
+/* a:focus {
     color: #bea69b;
 }
 a:active {
     color: #bea69b;
-}
+} */
 .link {
-    text-decoration: none;
+    text-decoration: none; 
 }
 ul {
     list-style: none;
@@ -135,13 +135,16 @@ img {
         text-transform: uppercase;
         color: #121212;
         cursor: pointer;
+        opacity: 0.6;
+        transition: 0.3s;
 }
 .mobile-menu-item:not(:last-child) {
     margin-bottom: 20px;
 }
 .mobile-menu-item:active, .mobile-menu-item:focus {
-    font-weight: 700;
-    color: #121212;
+    color: #3b2621;
+    opacity: 1;
+    letter-spacing: 0.5px;
 }
 .header-menu-link {}
 
@@ -692,7 +695,7 @@ textarea::placeholder:focus, textarea::placeholder:active {
     margin-bottom: 10px;
 }
 .foot-contacts-link {
-   
+  
 }
 
 .foot-social-list {}
@@ -706,11 +709,17 @@ textarea::placeholder:focus, textarea::placeholder:active {
     margin-bottom: 14px;
 }
 
-.instagram-link {}
+.instagram-link:active,  .instagram-link:focus {
+color: #bea69b;
+}
 
-.facebook-link {}
+.facebook-link:active, .facebook-link:focus {
+    color: #bea69b;  
+}
 
-.youtube-link {}
+.youtube-link:active, .youtube-link:focus {
+    color: #bea69b;
+}
 
 .foot-navigation {}
 
@@ -725,7 +734,9 @@ text-transform: uppercase;
 .foot-menu-item:not(:last-child) {
     margin-bottom: 14px;
 }
-
+.foot-menu-item:active, .foot-menu-item:focus {
+    color: #bea69b;
+}
 .foot-menu-link {}
 .foot-box {
     display: flex;
