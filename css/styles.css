@@ -16,12 +16,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-/* a:focus {
-    color: #bea69b;
-}
-a:active {
-    color: #bea69b;
-} */
+
 .link {
     text-decoration: none; 
 }
@@ -70,12 +65,13 @@ img {
         border-radius: 12px;
         padding-top: 17px;
         padding-bottom: 17px;
-       }
-       .header-navigation {
         display: flex;
             justify-content: space-between;
             align-items: center;
             text-align: center;
+       }
+       .header-navigation {
+        
        }
 .header-menu-list {
     display: none;
@@ -83,10 +79,10 @@ img {
 .header-btn {
     display: none;
 }
-.heder-logo-icon {
+.header-logo-icon {
     fill: #fff;
 }
-.heder-nav-icon {
+.header-nav-icon {
     stroke: #fff;
  }
  .mobile-menu-open {
@@ -216,19 +212,32 @@ img {
     fill: #fff;
 }
 .hero-box-imgs {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
    justify-content: flex-end;
 }
 
 .hero-box-imgs img {
-    border-radius: 50%;
+    border-radius: 100%;
     border: 2px solid #1d1d1d;
-    margin-right: -15px;
 }
 
 .hero-box-imgs img:first-child {
     margin-right: 0; 
+}
+.hero-box-img1 {
+  position: relative;
+    z-index: 2;
+}
+.hero-box-img2 {
+    position: absolute;
+   right: 15px;
+   z-index: 1;
+}
+.hero-box-img3 {
+    position: absolute;
+    right: -15px;
 }
 .hero-box-revtext {
         font-weight: 400;
@@ -251,7 +260,7 @@ img {
 .icon-circle {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #bea69b;
     display: flex;
         align-items: center;
@@ -471,8 +480,6 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-
 .form-title {
    margin-bottom: 20px;
         font-weight: 500;
@@ -480,11 +487,9 @@ img {
         line-height: 114%;
         letter-spacing: -0.04em;
 }
-
 .subtitle-italic {
     color: #bea69b;
 }
-
 .form-text {
         font-weight: 400;
         font-size: 12px;
@@ -503,12 +508,6 @@ img {
         letter-spacing: -0.02em;
         margin-bottom: 40px;
 }
-.form-signup {}
-
-.label-signup-name {
-    
-}
-
 .input-signup-name {
     outline: none;
     background-color: transparent;
@@ -523,8 +522,6 @@ img {
 .input-signup-name:focus, .input-signup-name:active {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.label-signup-email {}
-
 .input-signup-email {
     outline: none;
     background-color: transparent;
@@ -553,8 +550,7 @@ img {
 }
 .input-signup-message:focus, .input-signup-message:active {
     border: 1px solid rgba(255, 255, 255, 0.5);
-   
-}
+   }
 .btn-signup {
     border-radius: 12px;
         min-width: 280px;
@@ -579,16 +575,11 @@ textarea::placeholder {
         line-height: 129%;
         color: #fff;
         opacity: 0.7;
-        
-}
+        }
 input::placeholder:focus, input::placeholder:active,
 textarea::placeholder:focus, textarea::placeholder:active {
     opacity: 1;
 }
-.form-img-small {}
-
-.form-img-big {}
-
 .form-text-italic {
     text-decoration: underline;
         text-decoration-skip-ink: none;
@@ -599,7 +590,6 @@ textarea::placeholder:focus, textarea::placeholder:active {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
 .reviews-title {
         font-weight: 500;
         font-size: 28px;
@@ -607,9 +597,6 @@ textarea::placeholder:focus, textarea::placeholder:active {
         letter-spacing: -0.04em;
         margin-bottom: 40px;
 }
-
-.reviews-list {}
-
 .reviews-item {
     border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
@@ -790,9 +777,292 @@ text-transform: uppercase;
     @media screen and (min-width: 768px) {
         .container {
             width: 768px;
-        }      
-       
+            padding-left: 32px;
+            padding-right: 32px;
+        }  
+        .header-container {
+        
+            position: relative;
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+           padding-top: 0;
+           padding-bottom: 0;
+        }  
+        .header-nav-box {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+              
+        }
+        .header-btn-box {
+            display: flex;
+            align-items: center;
+          gap: 16px;
+        }  
+     .header-btn {
+        display: inline-block;
+        border-radius: 12px;
+            width: 187px;
+            height: 60px;
+            border: none;
+            background-color: #fff;
+     }
+     .modal {
+        width: 480px;
+        height: 975px;
+     }
+     .mobile-menu-open {
+       top: 10;
+            transform: translateY(20%);
+           
+            right: 0;
+      
+     }
+.header-nav-icon {
+    width: 40px;
+    height: 28px;
+}
+/* -------HERO------- */
+.hero {
+    padding-top: 20px;
+    padding-bottom: 50px;
 
+}
+.hero-title {
+    font-size: 60px;
+    line-height: 107%;
+    max-width: 517px;
+}
+.hero-text {
+    max-width: 400px;
+}
+.hero-img {
+    width: 393px;
+    margin: 0 auto;
+}
+.hero-box-left {
+  flex-direction: row;
+  gap: 12px;
+}
+.icon-circle {
+    width: 50px;
+    height: 50px;
+}
+.hero-box-revtext {
+    font-size: 16px;
+}
+.hero-rev-text {
+    font-size: 16px;
+  margin-left: 70px;
+}
+.hero-box-img1, .hero-box-img2, .hero-box-img3 {
+    width: 54px;
+    height: 54px;
+}
+.hero-box-imgs img {
+    border-radius: 100%;
+    border: 3px solid #1d1d1d;
+  
+}
+.hero-box-img1 {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-box-img2 {
+    position: absolute;
+    right: -35px;
+    z-index: 1;
+}
+
+.hero-box-img3 {
+    position: absolute;
+    right: -70px; 
+}
+
+/* ---------TITLE-------- */
+.title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.title-section {
+        font-size: 40px;
+        line-height: 125%;
+        width: 704px;
+     }
+
+/*------------ABOUT--------- */
+.about {
+   padding-top: 50px;
+   padding-bottom: 50px; 
+}
+.about-title {
+    font-size: 48px;
+    line-height: 113%;
+    margin-bottom: 50px;
+}
+.about-img {
+    margin-bottom: 50px;
+    width: 704px;
+}
+.about-text {
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 280px;
+}
+.about p+p {
+    margin-top: 0;
+}
+.about-text-box {
+    display: flex;
+    gap: 40px;
+    padding-right: 100px;
+}
+
+/* --------COURSES------ */
+.courses {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.courses-title {
+    font-size: 48px;
+    line-height: 113%;
+    margin-bottom: 0;
+}
+.courses-text {
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 381px;
+    margin-bottom: 0;
+}
+.courses-title-text-box {
+    display: flex;
+    gap: 58px;
+    margin-bottom: 50px;
+}
+.courses-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.course-item {
+    width: 342px;
+    height: 452px;
+   flex-shrink: 0;
+}
+.course-item:not(:last-child) {
+     margin-bottom: 0px;
+ }
+.course-text {
+    font-size: 16px;
+    line-height: 125%;
+}
+.courses-subtitle {
+    margin-bottom: 180px;
+}
+.course-icon-box {
+    margin-bottom: 32px;
+}
+/* -----MENTORS------ */
+.mentors {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mentors-list {
+    gap: 100px;
+}
+.mentors-title {
+    font-size: 48px;
+    line-height: 113%;
+    margin-bottom: 50px;
+}
+.mentors-subtitle {
+    font-size: 28px;
+    line-height: 114%;
+}
+.mentors-text {
+    font-size: 14px;
+    line-height: 129%;
+}
+/* ------FORM------ */
+.form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-title {
+    font-size: 48px;
+    line-height: 113%;
+}
+.form-description {
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 480px;
+}
+.form-text {
+    font-size: 14px;
+    line-height: 129%;
+    max-width: 480px;
+}
+.input-signup-name {
+    width: 480px;
+    height: 60px;
+    margin-bottom: 14px;
+}
+.input-signup-email {
+    width: 480px;
+    height: 60px;
+    margin-bottom: 14px;
+}
+.input-signup-message {
+    width: 480px;
+    height: 119px;
+}
+.btn-signup {
+    min-width: 480px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 156%;
+}
+input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+    line-height: 125%;
+}
+
+/* ------REVIEWS----- */
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.reviews-title {
+    font-size: 48px;
+    line-height: 113%;
+    margin-bottom: 50px;
+}
+.reviews-item {
+    width: 640px;
+    height: 196px;
+    
+}
+.reviews-subtitle {
+    line-height: 140%;
+}
+.reviews-text {
+    font-size: 14px;
+    line-height: 129%;
+}
+.reviews-description {
+    font-size: 16px;
+    line-height: 125%;
+}
+.card {
+    position: relative;
+}
+.star {
+    position: absolute;
+    top: 10px;
+   
+}
         }
 
         @media screen and (min-width: 1158px) {

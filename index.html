@@ -22,16 +22,8 @@
 <body>
     <header class="header">
      <div class="container header-container">
+      
         <nav class="header-navigation">
-            <a class="header-logo" href="./index.html">
-                <svg class="heder-logo-icon" width="123" height="16">
-                    <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>  </svg>
-               </a>
-               <button class="mobile-menu-open" type="button">          
-                 <svg class="heder-nav-icon" width="32" height="22">
-                <use href="./images/symbol-defs.svg#icon-Nav"></use>
-            </svg>
-        </button>
             <ul class="header-menu-list">
                 <li class="header-menu-item"><a class="header-menu-link curret" href="">About us</a></li>
                 <li class="header-menu-item"><a class="header-menu-link" href="">Our courses</a></li>
@@ -39,9 +31,24 @@
                 <li class="header-menu-item"><a class="header-menu-link" href="">Reviews</a></li>
                     <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
             </ul>
+        
+            <a class="header-logo" href="./index.html">
+                <svg class="header-logo-icon" width="123" height="16">
+                    <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
+                </svg>
+            </a>
         </nav>
+            <div class="header-btn-box">
+            <button class="mobile-menu-open" type="button">
+                <svg class="header-nav-icon" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-Nav"></use>
+                </svg>
+            </button>
+       
         <button class="header-btn" type="submit">Sign up</button>
+    
     </div>
+</div>
         </div>
     <div class="backdrop hidden">
         <div class="modal">
@@ -72,13 +79,35 @@
     <div class="hero-box">
         <div class="hero-box-left">
         <div class="hero-box-imgs">
-        <img class="hero-box-img" 
-        srcset="./images/girlsmallmob1x2.webp 1x, ./images/girlsmallmob2x2.webp 2x"
-        src="./images/girlsmallmob1x2.webp" alt="girl" width="44" height="44">
-        <img class="hero-box-img" srcset="./images/boysmallmob1x.webp 1x, ./images/boysmallmob2x.webp 2x"
-            src="./images/boysmallmob1x.webp" alt="boy" width="44" height="44">
-            <img class="hero-box-img" srcset="./images/girlsmallmob1x1.webp 1x, ./images/girlsmallmob2x1.webp 2x"
-                src="./images/girlsmallmob1x1.webp" alt="girl" width="44" height="44">
+            <picture>
+                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
+                                                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+                <source srcset="./images/girlsmalltab1x.webp 1x,
+                                                                ./images/girlsmalltab2x.webp 2x" media="(min-width: 768px)" />
+                <source srcset="./images/girlsmallmob1x2.webp 1x,
+                                        ./images/girlsmallmob2x2.webp 2x" media="(max-width: 767px)" />
+                <img class="hero-box-img3" src="./images/girlsmallmob1x2.webp" alt="girl" width="44" height="44" />
+            </picture>
+           
+            <picture>
+                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
+                                                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+                <source srcset="./images/boytab1x.webp 1x,
+                                                                ./images/boytab2x.webp 2x" media="(min-width: 768px)" />
+                <source srcset="./images/boysmallmob1x.webp 1x,
+                                        ./images/boysmallmob2x.webp 2x" media="(max-width: 767px)" />
+                <img class="hero-box-img2" src="./images/boysmallmob1x.webp" alt="boy" width="44" height="44" />
+            </picture>
+            <picture>
+                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
+                                                                                        ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+                <source srcset="./images/girl1tab1x.webp 1x,
+                                                                                        ./images/girl1tab2x.webp 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/girlsmallmob1x1.webp 1x,
+                                                                ./images/girlsmallmob2x1.webp 2x" media="(max-width: 767px)" />
+                <img class="hero-box-img1" src="./images/girlsmallmob1x1.webp" alt="girl" width="44" height="44" />
+            </picture>
             </div>
                 <p class="hero-rev-text">Our happy students
                     <svg class="hero-box-icon" width="20" height="10">
@@ -96,9 +125,15 @@
             </div>
             </div>     
     </div>
-    <img class="hero-img" 
-    srcset="./images/Rectangle5mob1x.webp 1x, ./images/Rectangle5mob2x.webp 2x"
-    src="./images/Rectangle5mob1x.webp" alt="boy with camera" width="239" height="304">
+    <picture>
+        <!-- <source srcset="./images/PF6-1x.jpg 1x, 
+                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+        <source srcset="./images/Rectangle5tab1x.webp 1x,
+                                ./images/Rectangle5tab2x.webp 2x" media="(min-width: 768px)" />
+        <source srcset="./images/Rectangle5mob1x.webp 1x,
+        ./images/Rectangle5mob2x.webp 2x" media="(max-width: 767px)" />
+        <img class="hero-img" src="./images/Rectangle5mob1x.webp" alt="boy with camera" width="239" height="304" />
+    </picture>
     </div>
 </section>
 <section class="title">
@@ -109,9 +144,19 @@
 <section class="about" id="about">
     <div class="container">
         <h2 class="about-title">About <span class="subtitle-italic">Us</span></h2>
-        <img class="about-img" 
-        srcset="./images/Rectangle 6mob1x.webp 1x, ./images/Rectangle 6mob2x.webp 2x"
-        src="./images/Rectangle 6mob1x.webp" alt="Camera">
+        
+        <picture>
+            <!-- <source srcset="./images/PF6-1x.jpg 1x, 
+                                            ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+            <source srcset="./images/Rectangle6tab1x.webp 1x,
+                                            ./images/Rectangle6tab2x.webp 2x" media="(min-width: 768px)" />
+            <source srcset="./images/Rectangle6mob1x.webp 1x,
+                    ./images/Rectangle6mob2x.webp 2x" media="(max-width: 767px)" />
+            <img class="about-img" src="./images/Rectangle6mob1x.webp" alt="Camera" width="280" height="335" />
+            </picture>
+        
+        
+        <div class="about-text-box">
         <p class="about-text">Our photography school is designed to teach you everything you need to know about this magical art. Regardless of your
         experience or skill level, we offer a wide range of courses to suit your needs and interests. Our teaching team consists
         of experienced photographers who have many years of experience in this field. They strive not only to share their
@@ -120,12 +165,15 @@
         processing and creating impressive compositions. You will have the opportunity to learn the technical aspects of
         photography, discover your own style and develop your own visual language.</p>
     </div>
+    </div>
 </section>
 <section class="courses" id="courses">
     <div class="container">
+        <div class="courses-title-text-box">
         <h2 class="courses-title">Our <span class="subtitle-italic">Courses</span></h2>
         <p class="courses-text">At our photography school, we offer a variety of courses that cover all aspects of this fascinating art. Regardless of
         your experience or skill level, we have courses to suit your needs and goals.</p>
+    </div>
         <ul class="courses-list">
             <li class="course-item">
                 <div class="course-icon-box">
