@@ -22,8 +22,7 @@
 <body>
     <header class="header">
      <div class="container header-container">
-      
-        <nav class="header-navigation">
+      <nav class="header-navigation">
             <ul class="header-menu-list">
                 <li class="header-menu-item"><a class="header-menu-link curret" href="">About us</a></li>
                 <li class="header-menu-item"><a class="header-menu-link" href="">Our courses</a></li>
@@ -31,25 +30,22 @@
                 <li class="header-menu-item"><a class="header-menu-link" href="">Reviews</a></li>
                     <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
             </ul>
-        
+        </nav>
+            <div class="header-btn-box">
             <a class="header-logo" href="./index.html">
                 <svg class="header-logo-icon" width="123" height="16">
                     <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
                 </svg>
             </a>
         </nav>
-            <div class="header-btn-box">
             <button class="mobile-menu-open" type="button">
                 <svg class="header-nav-icon" width="32" height="22">
                     <use href="./images/symbol-defs.svg#icon-Nav"></use>
                 </svg>
             </button>
-       
-        <button class="header-btn" type="submit">Sign up</button>
-    
-    </div>
-</div>
         </div>
+            <button class="header-btn" type="submit">Sign up</button>
+</div>
     <div class="backdrop hidden">
         <div class="modal">
             <button class="mobile-menu-close" type="button">
@@ -66,7 +62,18 @@
                         <li class="mobile-menu-item"><a class="header-menu-link" href="#contacts">Contacts</a></li>
                     </ul>     
                  </nav>
-                 <img class="mobile-img" src="./images/Rectangle 6.webp" alt="camera">
+
+                <picture>
+                  
+                    <source srcset="./images/Rectangle6mtab1x.webp 1x,
+                                                                                    ./images/Rectangle6mtab2x.webp 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/Rectangle6.webp 1x,
+                                                            ./images/Rectangle6.webp 2x" media="(max-width: 767px)" />
+                    <img class="mobile-img" src="./images/Rectangle6.webp" alt="camera" width="" height="" />
+                    </picture>
+
+                 <!-- <img class="mobile-img" src="./images/Rectangle6.webp" alt="camera"> -->
         </div>
    
     </header>
@@ -345,6 +352,8 @@ and allow Promodo to use this information for marketing purposes.</p>
 
    <footer class="foot">
 <div class="container">
+    <div class="foot-container">
+        <div class="foot-logo-box">
     <a class="foot-logo" href="./index.html">
         <svg class="foot-logo-icon" width="123" height="16">
             <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
@@ -357,6 +366,7 @@ and allow Promodo to use this information for marketing purposes.</p>
             <li class="foot-contacts-item"><a class="foot-contacts-link" href="tel:+110001111111">+11 (000)
                     111-11-11</a></li>
                 </ul>
+            </div>
                 <div class="foot-box">
         <ul class="foot-social-list">
             <li class="foot-social-item">
@@ -380,12 +390,15 @@ and allow Promodo to use this information for marketing purposes.</p>
             </ul>
         </nav>
     </div>
+    <div class="foot-label-btn">
         <label class="label-foot-email" for="input-foot-email">
             <input type="email" id="input-foot-email" class="input-foot-email" name="input-foot-email"
                 placeholder="Enter your email">
             </label>
             <button class="foot-btn" type="submit">Go</button>
-<ul class="foot-information-list">
+          </div>
+        </div>
+            <ul class="foot-information-list">
     <li class="foot-information-item">
         <p class="foot-information-text">Privacy Policy
         Public Offering Agreement</p>
