@@ -23,12 +23,16 @@
     <header class="header">
      <div class="container header-container">
       <nav class="header-navigation">
+        <a class="header-logo-desctop" href="./index.html">
+            <svg class="header-logo-icon" width="123" height="16">
+                <use href="./images/symbol-defs.svg#icon-FocusFrame"></use>
+            </svg>
             <ul class="header-menu-list">
-                <li class="header-menu-item"><a class="header-menu-link curret" href="">About us</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="">Our courses</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="">Our mentors</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="">Reviews</a></li>
-                    <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
+                <li class="header-menu-item"><a class="header-menu-link curret" href="#about">About us</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#courses">Our courses</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#mentors">Our mentors</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#reviews">Reviews</a></li>
+                    <li class="header-menu-item"><a class="header-menu-link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
             <div class="header-btn-box">
@@ -73,13 +77,13 @@
                     <img class="mobile-img" src="./images/Rectangle6.webp" alt="camera" width="" height="" />
                     </picture>
 
-                 <!-- <img class="mobile-img" src="./images/Rectangle6.webp" alt="camera"> -->
         </div>
    
     </header>
     <main>
 <section class="hero">
     <div class="container hero-container">
+        <div class="hero-left">
       <h1 class="hero-title">Discover the magic of <span class="hero-title-italic">photography</span> in our school</h1>  
       <p class="hero-text">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical
     skills, translate your unique ideas.</p>
@@ -87,8 +91,6 @@
         <div class="hero-box-left">
         <div class="hero-box-imgs">
             <picture>
-                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
-                                                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
                 <source srcset="./images/girlsmalltab1x.webp 1x,
                                                                 ./images/girlsmalltab2x.webp 2x" media="(min-width: 768px)" />
                 <source srcset="./images/girlsmallmob1x2.webp 1x,
@@ -97,8 +99,6 @@
             </picture>
            
             <picture>
-                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
-                                                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
                 <source srcset="./images/boytab1x.webp 1x,
                                                                 ./images/boytab2x.webp 2x" media="(min-width: 768px)" />
                 <source srcset="./images/boysmallmob1x.webp 1x,
@@ -106,8 +106,6 @@
                 <img class="hero-box-img2" src="./images/boysmallmob1x.webp" alt="boy" width="44" height="44" />
             </picture>
             <picture>
-                <!-- <source srcset="./images/PF6-1x.jpg 1x, 
-                                                                                        ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
                 <source srcset="./images/girl1tab1x.webp 1x,
                                                                                         ./images/girl1tab2x.webp 2x"
                     media="(min-width: 768px)" />
@@ -132,15 +130,18 @@
             </div>
             </div>     
     </div>
+</div>
+<div class="hero-right">
     <picture>
-        <!-- <source srcset="./images/PF6-1x.jpg 1x, 
-                                ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+        <source srcset="./images/Rectangle5des1x.webp 1x, 
+                                ./images/Rectangle5des2x.webp 2x" media="(min-width: 1158px)" />
         <source srcset="./images/Rectangle5tab1x.webp 1x,
                                 ./images/Rectangle5tab2x.webp 2x" media="(min-width: 768px)" />
         <source srcset="./images/Rectangle5mob1x.webp 1x,
         ./images/Rectangle5mob2x.webp 2x" media="(max-width: 767px)" />
         <img class="hero-img" src="./images/Rectangle5mob1x.webp" alt="boy with camera" width="239" height="304" />
     </picture>
+</div>
     </div>
 </section>
 <section class="title">
@@ -151,10 +152,10 @@
 <section class="about" id="about">
     <div class="container">
         <h2 class="about-title">About <span class="subtitle-italic">Us</span></h2>
-        
+        <div class="about-box">
         <picture>
-            <!-- <source srcset="./images/PF6-1x.jpg 1x, 
-                                            ./images/PF6-2x.jpg 2x" media="(min-width: 1158px)" /> -->
+            <source srcset="./images/Rectangle6des1x.webp 1x, 
+                                            ./images/Rectangle6des2x.webp 2x" media="(min-width: 1158px)" />
             <source srcset="./images/Rectangle6tab1x.webp 1x,
                                             ./images/Rectangle6tab2x.webp 2x" media="(min-width: 768px)" />
             <source srcset="./images/Rectangle6mob1x.webp 1x,
@@ -173,6 +174,7 @@
         photography, discover your own style and develop your own visual language.</p>
     </div>
     </div>
+</div>
 </section>
 <section class="courses" id="courses">
     <div class="container">
@@ -266,6 +268,8 @@
 <section class="form" id="contacts">
 <div class="container">
 <h2 class="form-title">Sign <span class="subtitle-italic">Up</span></h2> 
+<div class="form-container">
+<div class="text-form-box">
 <p class="form-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>   
 <form class="form-signup">
     <label class="label-signup-name" for="input-signup-name">
@@ -283,8 +287,10 @@
 <button class="btn-signup" type="submit">Send</button>
 <p class="form-text">By clicking on “Send” button, you agree to our <span class="form-text-italic">Privacy Policy</span>,
 and allow Promodo to use this information for marketing purposes.</p>
-<img class="form-img-small" src="" alt="">
-<img class="form-img-big" src="" alt="">
+</div>
+<img class="form-img" src="./images/block.webp" alt="camera" width="540" height="540"
+srcset="/images/block.webp 1x, /images/block2x.webp 2x" >
+</div>
 </div>
 </section>
 <section class="reviews" id="reviews">
@@ -296,9 +302,11 @@ and allow Promodo to use this information for marketing purposes.</p>
     <img class="reviews-img" 
     srcset="./images/usermob1x.webp 1x, ./images/usermob2x.webp 2x"
     src="./images/usermob1x.webp" alt="User">
+    <div class="left">
     <div class="content">
     <h3 class="reviews-subtitle">Abraham Baker</h3>
     <p class="reviews-text">Student</p>
+</div>
     <div class="star">
     <svg class="reviews-icon" width="20" height="20">
         <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
@@ -323,24 +331,34 @@ and allow Promodo to use this information for marketing purposes.</p>
     discover my own style.</p>
 </li>
 <li class="reviews-item">
-    <img class="reviews-img" src="" alt="">
+    <div class="card">
+    <img class="reviews-img"
+    srcset="./images/user21x.webp 1x, ./images/user22x.webp 2x"
+    src="./images/user21x.webp" alt="student">
+    <div class="left">
+    <div class="content">
     <h3 class="reviews-subtitle">Amanda Lowery</h3>
     <p class="reviews-text">Student</p>
+</div>
+    <div class="star">
     <svg class="reviews-icon" width="20" height="20">
-        <use href=""></use>
+        <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
     </svg>
     <svg class="reviews-icon" width="20" height="20">
-        <use href=""></use>
+        <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
     </svg>
     <svg class="reviews-icon" width="20" height="20">
-        <use href=""></use>
+        <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
     </svg>
     <svg class="reviews-icon" width="20" height="20">
-        <use href=""></use>
+        <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
     </svg>
     <svg class="reviews-icon" width="20" height="20">
-        <use href=""></use>
+        <use href="./images/symbol-defs.svg#icon-Vector-4"></use>
     </svg>
+</div>
+</div>
+</div>
     <p class="reviews-description">The courses at the photography school exceeded all my expectations. I gained not only technical knowledge, but also
     inspiration and motivation to reach new heights in my creativity. Hands-on classes and workshops helped me understand
     different styles of photography.</p>
